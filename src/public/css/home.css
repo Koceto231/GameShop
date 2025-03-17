@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/static/images/wallpaperflare.com_wallpaper.jpg);
+  background-position: auto;
+  background-size: cover;
+  padding-top: 120px;
+}
+
+nav {
+  background-color: #050912;
+  width: 100%;
+  padding: 2px 0;
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+
+nav ul {
+  flex: 1;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 60px;
+  align-items: center;
+  text-align: center;
+  margin-top: -70px;
+}
+
+.content h1 {
+  font-size: 88px;
+  margin-bottom: 15px;
+}
+
+.content h1 span {
+  color: #096BAB;
+}
+
+.content p {
+  line-height: 22px;
+  font-size: 26px;
+}
+
+.content strong {
+    color: #2E87CB
+}
+
+.content .buy {
+  display: inline-block;
+  margin-top: 30px;
+  background: #2E87CB;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 50px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+footer p {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #050912;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  padding-left: 70px;
+  
+}
+
+.errorContainer{
+  position:fixed;
+  right: 100px;
+  min-width: 100px;
+  display: block;
+  top: 80px;
+  text-align: center;
+  border-radius: 20px;
+  width: 350px;
+  color: white;
+  height: auto;
+  z-index: 11111;
+}
+
+.errorContainer > p {
+  background-color: #096BAB;
+  font-size: 18px;
+  padding: 18px;
+  border-radius: 20px;
+  height: auto;
+}
+
+.prices1{
+  line-height: 20px;
+}
+
+
+
+
+

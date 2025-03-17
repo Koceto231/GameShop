@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Team</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+
+
+    {{#if error}}
+    <div>
+        <div class="errorContainer">
+            <p>{{error}}</p>
+        </div>
+    </div>
+    {{/if}}
+
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/games/catalog">All Games</a></li>
+                {{#if user}}
+                <li><a href="/games/libary">Bought Games</a></li>
+                <li><a href="/search">
+Search</a></li>
+                <li><a href="/games/create">Create Offer</a></li>
+                <li><a href="/auth/logout">Leave</a></li>
+                {{else}}
+                <li><a href="/auth/login">Login</a></li>
+                <li><a href="/auth/register">Register</a></li>
+                {{/if}}
+            </ul>
+        </nav>
+    </header>
+
+    {{{body}}}
+
+    <footer>
+        <p>Project 2023-2024 PGAVT POPOV</p>
+    </footer>
+
+
+</body>
+
+</html>
